@@ -1,0 +1,30 @@
+#Microservice FOO Configurations
+
+#O que for configurado nessa área vale para todos os perfis de start de aplicação.
+#Utilizo essa área para incluir as configurações para o ambiente de desenvolvimento (sem perfil definido)
+
+microservices.series:
+  foo: 
+    primeiraconfig: Esse é um exemplo da minha primeira configuração do microserviço foo
+
+---
+
+spring:
+  profiles: staging  
+
+# O que for configurado nessa área pode sobrescrever ou adicionar propriedades para os perfis de ambientes de testes
+
+microservices.series:
+  foo: 
+    primeiraconfig: Esse é um exemplo da minha primeira configuração do microserviço foo para o ambiente de staging
+
+---
+
+spring:
+  profiles: production
+
+# O que for configurado nessa área pode sobrescrever ou adicionar propriedades para os perfis de ambientes de produçào
+
+microservices.series:
+  foo: 
+    primeiraconfig: Esse é um exemplo da minha primeira configuração do microserviço foo para o ambiente de produção

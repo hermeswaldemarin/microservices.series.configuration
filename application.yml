@@ -1,0 +1,27 @@
+#Global Configurations
+
+# O que for configurado nessa área vale para todos os perfis de start de aplicação.
+#Utilizo essa área para incluir as configurações para o ambiente de desenvolvimento (sem perfil definido)
+
+microservices.series:
+  minhaconfig: Esse é um exemplo da minha primeira configuração global
+
+---
+
+spring:
+  profiles: staging  
+
+# O que for configurado nessa área pode sobrescrever ou adicionar propriedades para os perfis de ambientes de testes
+
+microservices.series:
+  minhaconfig: Esse é um exemplo da minha primeira configuração global para o ambiente de staging
+
+---
+
+spring:
+  profiles: production
+
+# O que for configurado nessa área pode sobrescrever ou adicionar propriedades para os perfis de ambientes de produçào
+
+microservices.series:
+  minhaconfig: Esse é um exemplo da minha primeira configuração global para o ambiente de produção
