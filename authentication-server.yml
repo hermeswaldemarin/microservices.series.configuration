@@ -4,8 +4,18 @@
 #Utilizo essa área para incluir as configurações para o ambiente de desenvolvimento (sem perfil definido)
 
 server:
-  port: 8181
+  port: 8080
   contextPath: /uaa
+
+spring:
+  jpa:
+    database-platform: MYSQL
+  jdbc:
+    driverClassName: ${microservices.series.mysqldb.driverClassName}
+    url: ${microservices.series.mysqldb.url}
+    user: ${microservices.series.mysqldb.user}
+    pass: ${microservices.series.mysqldb.pass}
+
 
 ---
 
