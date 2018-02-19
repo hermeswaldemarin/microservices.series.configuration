@@ -19,7 +19,7 @@ spring:
   mail:
     host: smtp.sendgrid.net
     port: 587
-    username: microservices
+    username: apikey
     password: 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
 
 spring.mail.properties.mail.smtp.auth: true
