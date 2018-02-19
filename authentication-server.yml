@@ -25,7 +25,9 @@ spring:
 spring.mail.properties.mail.smtp.auth: true
 spring.mail.properties.mail.smtp.starttls.enable: true
 
-microservices.series.authentication-server.redirecturl: http://localhost:3000
+microservices.series.authentication-server:
+  redirecturl: http://localhost:3000
+  url: http://localhost:8080/uaa
 
 ---
 
