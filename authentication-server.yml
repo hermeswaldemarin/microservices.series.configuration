@@ -17,10 +17,10 @@ spring:
     pass: ${microservices.series.mysqldb.pass}
 
   mail:
-    host: smtp.sendgrid.net
+    host: smtp.gmail.com
     port: 587
-    username: apikey
-    password: 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
+    username: 
+    password: 
 
 spring.mail.properties.mail.smtp.auth: true
 spring.mail.properties.mail.smtp.starttls.enable: true
