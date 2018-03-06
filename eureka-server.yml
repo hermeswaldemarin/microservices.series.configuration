@@ -1,0 +1,22 @@
+#Microservice eureka-server Configurations
+
+#O que for configurado nessa área vale para todos os perfis de start de aplicação.
+#Utilizo essa área para incluir as configurações para o ambiente de desenvolvimento (sem perfil definido)
+
+server:
+  port: 8761
+
+
+---
+
+spring:
+  profiles: staging  
+
+# O que for configurado nessa área pode sobrescrever ou adicionar propriedades para os perfis de ambientes de testes
+
+---
+
+spring:
+  profiles: production
+
+# O que for configurado nessa área pode sobrescrever ou adicionar propriedades para os perfis de ambientes de produçào
