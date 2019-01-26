@@ -8,7 +8,7 @@ microservices.series:
 
 microservices.series.mysqldb:
   driverClassName: com.mysql.cj.jdbc.Driver
-  url: jdbc:mysql://localhost:3306/microservices
+  url: jdbc:mysql://localhost:3306/microservices?useSSL=false
   user: microservices
   pass: microservices@2018
 
