@@ -7,7 +7,7 @@ microservices.series:
   minhaconfig: Esse é um exemplo da minha primeira configuração global
 
 microservices.series.mysqldb:
-  driverClassName: com.mysql.jdbc.Driver
+  driverClassName: com.mysql.cj.jdbc.Driver
   url: jdbc:mysql://localhost:3306/microservices
   user: microservices
   pass: microservices@2018
